@@ -1,0 +1,71 @@
+@import '~normalize.css';
+// @import './_fonts';
+// @import './_var';
+// @import './_style';
+
+html {
+  box-sizing: border-box;
+  // transition: .3s linear;
+  height: 100%;
+  // font-size: 0.9765625vw;
+  // font-size: calc(10 / (1024px / 100vw));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  // line-height: 1.4rem;
+  background-color: #fff;
+  height: 100%;
+  // font-family: "Futura", sans-serif;
+  font-weight: 400;
+  // color: var(--mainFontColor);
+}
+
+body.stop-scroll {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  // max-width: 1350px;
+  width: 100%;
+  // padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main-content {
+  flex-grow: 1;
+}
